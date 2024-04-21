@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -36,7 +35,12 @@ def predictSentiment(sentence):
         print("Negative: ",result)
 
 
-statement=input("Enter Statement: ")
-predictSentiment(statement)
+
+while(1):
+    statement=input("Enter Statement: ")
+    if statement:
+        predictSentiment(statement)
+    else:
+        break
 
 
